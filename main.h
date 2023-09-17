@@ -9,17 +9,17 @@
 
 
 /**
- * struct format - is the function to check for format
+ * struct form - is the function to check for format
  * @sp: is the specifier type
  * @f: is the print function to use
  */
 
-typedef struct format
+typedef struct form
 {
 	char *sp;
 	int (*f)();
 }
-format_t;
+form_t;
 
 int _putchar(char c);
 int _printf(const char *format, ...);
