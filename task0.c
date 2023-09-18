@@ -17,33 +17,11 @@ int print_char(va_list args)
  * print_string - to print string
  * @args: list of arguments
  *
- * Return: count
+ * Return: 1
  */
 
 int print_string(va_list args)
 {
 
 int count = 0;
-char *str = va_arg(args, char*);
-
-if (str == NULL)
-str = "(null)";
-
-while (str[count] != '\0')
-{
-	_putchar(str[count]);
-count++;
-}
-return (count);
-}
-
-/**
- * print_percent - to print percent
- * Return: 1
- */
-
-int print_percent(void)
-{
-	_putchar('%');
-	return (1);
-}
+char *str = va_arg(arg
