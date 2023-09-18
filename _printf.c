@@ -56,15 +56,6 @@ form_t ops[] = {
 {"%", print_percent},
 {"i", print_int},
 {"d", print_dec},
-{"b", print_binary},
-{"u", print_unsigned},
-{"o", print_octal},
-{"x", print_hex},
-{"X", print_HEX},
-{"S", print_S},
-{"p", print_ptr},
-{"r", print_rev},
-{"R", print_rot13},
 {NULL, NULL}
 };
 if (format == NULL || (format[0] == '%' && format[1] == '\0'))
