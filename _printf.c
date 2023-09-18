@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include "main.h"
 
 /**
@@ -71,3 +72,5 @@ count = find_op(format, args, ops);
 va_end(args);
 return (count);
 }
+=======
+>>>>>>> 45a3c5f611b4890ed59b8e23a0298a626ddd1048
