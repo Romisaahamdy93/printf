@@ -41,6 +41,7 @@ i++;
 }
 return (count);
 }
+
 /**
  * _printf - print anthing according to format
  * @format: is a character string
