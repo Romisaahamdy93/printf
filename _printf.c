@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * find_op - to find format
  * @format: is a character string
@@ -58,10 +59,14 @@ form_t ops[] = {
 {"d", print_dec},
 {NULL, NULL}
 };
+
 if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 return (-1);
+
 va_start(args, format);
+
 count = find_op(format, args, ops);
+
 va_end(args);
 return (count);
 }
