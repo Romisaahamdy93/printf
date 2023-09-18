@@ -36,7 +36,7 @@ j++;
 }
 if (ops[j].sp == NULL)
 {
-count++;
+count += _putchar('%');
 count += _putchar(format[i]);
 }
 }
