@@ -13,8 +13,7 @@ unsigned int num;
 x = va_arg(args, int);
 if (x < 0)
 {
-_putchar('-');
-count++;
+count = count + _putchar('-');
 x = x * -1;
 }
 else
@@ -23,8 +22,7 @@ while (num / exp > 9)
 exp = exp * 10;
 while (exp != 0)
 {
-_putchar(num / exp + '0');
-count++;
+count = count + _putchar(num / exp + '0');
 num = num % exp;
 exp = exp / 10;
 }
