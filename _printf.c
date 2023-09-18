@@ -20,7 +20,12 @@ i++;
 j = 0;
 while (ops[j].sp != NULL)
 {
-if (*(ops[j].sp) == format[i])
+if (format[i] == '%')
+{
+count = count + _putchar('%');
+break;
+}
+else if (*(ops[j].sp) == format[i])
 {
 count += ops[j].f(args);
 if (count == -1)

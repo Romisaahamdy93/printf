@@ -14,9 +14,8 @@ x = va_arg(args, int);
 if (x < 0)
 {
 count = count + _putchar('-');
-x = x * -1;
+x = -x;
 }
-else
 num = x;
 while (num / exp > 9)
 exp = exp * 10;
@@ -43,7 +42,7 @@ x = va_arg(args, int);
 if (x < 0)
 {
 count = count + _putchar('-');
-x = x * -1;
+x = -x;
 }
 else
 num = x;
