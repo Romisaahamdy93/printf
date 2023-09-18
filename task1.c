@@ -13,15 +13,16 @@ unsigned int num;
 x = va_arg(args, int);
 if (x < 0)
 {
-count = count + _putchar('-');
-x = -x;
+count += _putchar('-');
+num = x * -1 ;
 }
+else
 num = x;
 while (num / exp > 9)
-exp = exp * 10;
+exp *= 10;
 while (exp != 0)
 {
-count = count + _putchar(num / exp + '0');
+count += _putchar(num / exp + '0');
 num = num % exp;
 exp = exp / 10;
 }
@@ -41,16 +42,16 @@ unsigned int num;
 x = va_arg(args, int);
 if (x < 0)
 {
-count = count + _putchar('-');
-x = -x;
+count += _putchar('-');
+num = x * -1;
 }
 else
 num = x;
 while (num / exp > 9)
-exp = exp * 10;
+exp *= 10;
 while (exp != 0)
 {
-count = count + _putchar(num / exp + '0');
+count += _putchar(num / exp + '0');
 num = num % exp;
 exp = exp / 10;
 }
