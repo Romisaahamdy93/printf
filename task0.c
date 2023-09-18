@@ -22,21 +22,21 @@ int print_char(va_list args)
 
 int print_string(va_list args)
 {
-	int count = 0;
+	int count;
 	char *str = va_arg(args, char*);
 
 	if (str == NULL)
-	
+
 		str = "(null)";
 
-	while (str[count] != '\0')
+	for (count = 0; str[count] != '\0'; count++)
 	{
 		_putchar(str[count]);
-		count++;
 	}
+
 	return (count);
-	
-	
+
+
 }
 
 /**
