@@ -26,15 +26,16 @@ int print_string(va_list args)
 	char *str = va_arg(args, char*);
 
 	if (str == NULL)
+	{
 		str = "(null)";
 
 	while (str[count] != '\0')
 	{
 		_putchar(str[count]);
 		count++;
-	}
-
 	return (count);
+	}
+	}
 }
 
 /**
