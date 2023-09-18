@@ -38,15 +38,3 @@ int print_string(va_list args)
 
 
 }
-
-/**
- * print_percent - to print percent
- *
- * Return: to 1
- */
-
-int print_percent(void)
-{
-	_putchar('%');
-	return (1);
-}

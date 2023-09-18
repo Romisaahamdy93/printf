@@ -60,7 +60,6 @@ va_list args;
 form_t ops[] = {
 {"c", print_char},
 {"s", print_string},
-{"%", print_percent},
 {"i", print_int},
 {"d", print_dec},
 {NULL, NULL}
