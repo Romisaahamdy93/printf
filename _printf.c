@@ -55,7 +55,7 @@ form_t ops[] = {
 {"s", print_string},
 {"%", print_percent},
 {"i", print_int},
-{"d", print_int},
+{"d", print_dec},
 {"b", print_binary},
 {"u", print_unsigned},
 {"o", print_octal},
