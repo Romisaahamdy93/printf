@@ -33,8 +33,9 @@ int print_string(va_list args)
 	{
 		_putchar(str[count]);
 		count++;
-	return (count);
 	}
+	return (count);
+	
 	}
 }
 
