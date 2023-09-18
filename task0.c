@@ -26,7 +26,7 @@ int print_string(va_list args)
 	char *str = va_arg(args, char*);
 
 	if (str == NULL)
-	{
+	
 		str = "(null)";
 
 	while (str[count] != '\0')
@@ -36,7 +36,7 @@ int print_string(va_list args)
 	}
 	return (count);
 	
-	}
+	
 }
 
 /**
