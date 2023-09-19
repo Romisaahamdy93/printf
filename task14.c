@@ -23,7 +23,7 @@ int print_rot13(va_list args)
 
 	for (x = 0; rot[x] != '\0'; x++)
 	{
-		for (y = 0; y <= 52; y++)
+		for (y = 0; a[y] != '\0'; y++)
 		{
 			if (rot[x] == a[y])
 			{
