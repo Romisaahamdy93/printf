@@ -12,7 +12,10 @@ rev = va_arg(args, char *);
 if (rev == NULL)
 rev = "(null)";
 for (y = 0; rev[y] != '\0'; y++)
+;
 for (x = y - 1; x >= 0; x--)
+{
 _putchar(rev[x]);
+}
 return (y);
 }
