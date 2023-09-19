@@ -20,7 +20,6 @@ int print_rot13(va_list args)
 
 	if (rot == NULL)
 		rot = "(null)";
-	return(-1);
 
 
 	for (x = 0; rot[x] != '\0'; x++)
