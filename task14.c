@@ -13,13 +13,14 @@ int print_rot13(va_list args)
 	int x, y;
 
 	char *rot;
-	char a[52] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char b[52] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz";
+	char b[] = "NOPQRSTUVWXYZABCDEFGHIJKLM nopqrstuvwxyzabcdefghijklm";
 
 	rot = va_arg(args, char*);
 
 	if (rot == NULL)
 		rot = "(null)";
+
 
 	for (x = 0; rot[x] != '\0'; x++)
 	{
