@@ -25,9 +25,9 @@ int print_rot13(va_list args)
 	{
 		for (y = 0; y < 52; y++)
 		{
-			if (rot[x] == rot[a])
+			if (rot[x] == a[x])
 			{
-				_putchar(rot[b]);
+			_putchar(b[y]);
 			count++;
 			break;
 			}
