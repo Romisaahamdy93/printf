@@ -62,6 +62,7 @@ form_t ops[] = {
 {"s", print_string},
 {"i", print_int},
 {"d", print_dec},
+{"r", print_rev},
 {NULL, NULL}
 };
 
