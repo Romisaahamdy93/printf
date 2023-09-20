@@ -21,10 +21,8 @@ int print_rot13(va_list args)
 	if (rot == NULL)
 	{
 		rot = "(null)";
-		for (x = 0; rot[x] != '\0'; x++)
-			_putchar(rot[x]);
-		count++;
 	}
+
 	else
 	{
 
@@ -36,7 +34,7 @@ int print_rot13(va_list args)
 			{
 			_putchar(b[y]);
 			count++;
-			break;
+
 
 			}
 
