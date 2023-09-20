@@ -21,30 +21,31 @@ int print_rot13(va_list args)
 	if (rot == NULL)
 	{
 		rot = "(null)";
+
+		for (x = 0; rot[x] != '\0'; x++)
+			_putchar(rot[x]);
+		count++;
 	}
 
 	else
 	{
-
-	for (x = 0; rot[x] != '\0'; x++)
-	{
-		for (y = 0; y < 52; y++)
+		for (x = 0; rot[x] != '\0'; x++)
 		{
-			if (rot[x] == a[y])
+			for (y = 0; y < 52; y++)
 			{
-			_putchar(b[y]);
-			count++;
-
-
+				if (rot[x] == a[y])
+				{
+					_putchar(b[y]);
+					count++;
+					break;
+				}
 			}
-
-			else if (rot[x] != a[y])
+			if (!a[y])
 			{
 				_putchar(rot[x]);
 				count++;
 			}
 		}
-	}
 	}
 	return (count);
 }
