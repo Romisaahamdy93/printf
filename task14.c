@@ -38,6 +38,11 @@ int print_rot13(va_list args)
 			count++;
 			break;
 			}
+			else
+			{
+				_putchar(rot[x]);
+				count++;
+			}
 		}
 	}
 	}
