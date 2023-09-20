@@ -36,9 +36,11 @@ int print_rot13(va_list args)
 			{
 			_putchar(b[y]);
 			count++;
+			break;
 
 			}
-			else
+
+			else if (rot[x] != a[y])
 			{
 				_putchar(rot[x]);
 				count++;
