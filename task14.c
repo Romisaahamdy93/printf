@@ -18,9 +18,6 @@ int print_rot13(va_list args)
 
 	rot = va_arg(args, char*);
 
-	if (rot == NULL)
-		rot = "(null)";
-
 
 	for (x = 0; rot[x] != '\0'; x++)
 	{
