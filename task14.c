@@ -19,32 +19,24 @@ int print_rot13(va_list args)
 	rot = va_arg(args, char*);
 
 	if (rot == NULL)
-	{
 		rot = "(null)";
 
-		for (x = 0; rot[x] != '\0'; x++)
-			_putchar(rot[x]);
-		count++;
-	}
-
-	else
+	for (x = 0; rot[x] != '\0'; x++)
 	{
-		for (x = 0; rot[x] != '\0'; x++)
+		for (y = 0; a[y] != '\0'; y++)
 		{
-			for (y = 0; y < 52; y++)
+			if (rot[x] == a[y])
 			{
-				if (rot[x] == a[y])
-				{
-					_putchar(b[y]);
-					count++;
-					break;
-				}
-			}
-			if (!a[y])
-			{
-				_putchar(rot[x]);
+				_putchar(b[y]);
 				count++;
+				break;
 			}
+		}
+
+		if (rot[x] != a[y])
+		{
+			_putchar(rot[x]);
+			count++;
 		}
 	}
 	return (count);
